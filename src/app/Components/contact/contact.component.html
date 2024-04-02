@@ -1,0 +1,87 @@
+<div class="container">
+  <h1 class="--contact--main-heading">Contact me</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <div [@slideInFromLeft]>
+        <div class="--contact--content">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYVJREFUSEvF1DFIVXEUx/HP20ShQHTQoS0KQQeRBrfAkogWp7bARSmxsUB0KYqGxmoMl4LaGgRxKsLFIQgcxCXBtUURJAy9/7gX/v15t/fufT08cJf/vef7u+d/zvk1dDkaXeY7F4Eg+hiX8RCHnVSZVnABHzCdQzdxHb/qiqQC3zGawD5hBr/riKQCpyWQt5j9HwJH6C0BLeFZVZG0gu2sByMlkDXc7lTgPe42gexgCvudCszjTQL5hhv4WRUevk+v6BL2EtBVhApqRbNNDmN5J6Kt4EktepMKAmcia+ZWBDzOz8IAxDGEl1jHatkPlHnRK9yPkn7gJnbzs0F8Qbi+EE+zRVxuJlIm0JNZxGdci5LCjjzHx/wZS4CvsYC/lvVfbjqQjeZXXKlw/+9wDydFTiu7vpj/bRjTdiNU8qBdgWKUF3ObKLORWPxFbvd/zlpVECeGxj5CWMa+knI2cCt23ioCBbMfc5jEOIbzF2EZw1AcxOJ1BNrtReUrqgSu0uRa4CLpDBORNRkbOkH4AAAAAElFTkSuQmCC"
+            class="--contact-img-phone"
+          />
+          <span class="--contact-subcontent"> : +91-829600925 </span>
+        </div>
+        <div class="--contact--content">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASZJREFUSEvt1cErBHEUwPHP3jlQSspNKf4JRzlLDlKKIgfl7LjlphxEUUoOkrMc/ROUs5JSHLizTzOaxuzOrmkum3f8zXvv+953pt801ByNmvvrL8A8mpisqO0BO7iKPllFd5iq2Dwtv8d0HvCZPD3Exh9B2drv4bMbpIA4m8UpRrsEPWMFN8j2KQQM4gNDLcARFkogl1jHGwbwnuS33eARy7hNEhdxgOEc6BWbuEjOZ3CG8TJA2ucE28lEoSqUhbqIUBFKQk1svIfV3ABtN8jmPWEN18lhqIgIdRFzOMZYgcauAGndecvxFkJLROjax1KH99MTIPq8ZDSEvpGSl98zoMsv9iftH1Bq7Jei2i+7uK53MVE6W+eEttd1xb7F5f31y6xF0RedUDYZkAb/FgAAAABJRU5ErkJggg=="
+            class="--contact-img-email"
+          />
+          <span class="--contact-subcontent"> : avanibnayak98@gmail.com </span>
+        </div>
+        <div class="--contact--content">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASxJREFUSEvl1TsvBFEYh/HfCp2Igso3oNXoKFQKIa6hk/AtJD6GS4m4h0InLo1G7xPoRKUl7Elem81erZndxlQzOe88z5z/Oe+cgjZfhTbzdVxwh/GMs7rHxA+jcgZfGeFV3EaC66ie+oO0xK0nOMBqgA+x3KKkqWAX6wHdw1regnfsowsr6M1b8IrngA5jsLgzHuJ5CP3YxgdGMFfxAU0jOsZSvHSERUo9M4MnvJRBN4vjW2XPTQUnAU3vJNlCxFVvG3fjDX0hySTowRVGQ5waK12PGMtDkLr0NkA72Ij7S0znIUhrcBGgWlGmoaYRncb0U3GCzCPl/IlZnIfgLMbK6/6JoFGjDURzpShq1f0qohb/DFXldRc5jwPnBpM/yo4fmVmjqZ9V7uQAfgNR+VIZag7oTQAAAABJRU5ErkJggg=="
+            class="--contact-img-in"
+          />
+          <span class="--contact-subcontent">
+            : https://www.linkedin.com/in/avani-nayak-90a5a9245/
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div [@slideInFromRight]>
+        <form #contactForm="ngForm" (ngSubmit)="sendMessage(contactForm)">
+          <label for="Name"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="Name"
+            placeholder="Enter Your Name..."
+            name="name"
+            ngModel
+            required
+          />
+
+          <label for="email"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="Enter Your Email Address..."
+            name="email"
+            ngModel
+            required
+            email
+          />
+
+          <label for="Subject"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="Subject"
+            placeholder="Enter Your Subject..."
+            name="sub"
+            ngModel
+            required
+          />
+
+          <label for="Message"></label>
+          <textarea
+            type="text"
+            class="form-control"
+            id="Message"
+            placeholder="Enter Your Message..."
+            name="msg"
+            ngModel
+            required
+          >
+          </textarea>
+
+          <button type="submit" class="btn btn-primary --contact-submt-btn">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

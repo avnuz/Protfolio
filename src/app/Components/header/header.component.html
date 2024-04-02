@@ -1,0 +1,57 @@
+<div class="container ">
+  <nav class="navbar navbar-expand-md fixed-top bg-light navbar-light header">
+    <div class="container"  >
+      <!--[routerLink]="['/admin-home']"-->
+      <!-- [routerLinkActiveOptions]="{exact: true}"
+      [routerLinkActive]="'--header--active'"    -->
+
+      <a href="#" class="navbar-brand h1 mb-0 butterfly-kids-regular bold"  [@slideInFromLeft] >
+        <!-- <img
+          src="/assets/Logo/logo.jpg"
+          alt="Nayak's Baking house"
+          class="--logo-image"
+        /> -->
+
+      Portfolio.
+
+       </a>
+
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" [@slideInFromBottom]>
+        <ul class="navbar-nav">
+          <!-- [routerLinkActive]="'--header--active'"  [routerLinkActiveOptions]="{exact: true}" -->
+          <li class="">
+            <a routerLink="/"    class="nav" fragment="home" >Home</a>
+          </li>
+
+          <li class="">
+            <a routerLink="/"   class="nav"  fragment="about" > About </a>
+          </li>
+
+          <li class="">
+            <a routerLink="/"   class="nav"  class="nav"  fragment="skills"> Skills </a>
+          </li>
+
+          <li class="">
+            <a routerLink="/"   class="nav"   class="nav" fragment="project"> Projects </a>
+          </li>
+
+          <li>
+            <a routerLink="/" class="nav"   class="nav"  fragment="contact"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+

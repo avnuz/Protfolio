@@ -1,1 +1,192 @@
+/* src/styles.css */
+@import "~bootstrap/dist/css/bootstrap.min.css";
 /* You can add global styles to this file, and also import other style files */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins' , sans-serif ;
+}
+
+body {
+  background: #002147 !important;
+  color: white !important;
+}
+nav.navbar.navbar-expand-md.fixed-top.bg-light.navbar-light.header {
+  background-color: #1d2951 !important;
+}
+a.navbar-brand.h1.mb-0.butterfly-kids-regular.bold {
+  color: white;
+}
+.nav {
+  text-decoration: none;
+  margin-right: 30px;
+  color: white !important;
+  transition: .3s !important;
+}
+.--header--active {
+  color: lightseagreen !important;
+}
+div#navbarNav {
+  display: flex;
+  justify-content: end;
+}
+.nav:hover {
+  color: lightseagreen !important;
+}
+
+//----home-style---
+
+.home-container {
+  margin-top: 130px !important;
+}
+.--profile-image {
+  margin-left: 60px;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  display: block;
+
+    box-shadow: 0 0 13px 33px rgba(32, 214, 170, 0.2), 0 0 12px 54px rgba(255, 192, 203, 0.2), 0 332px 57px rgba(0, 0, 0, 0.1);
+}
+.--home-content{
+  display: flex;
+  justify-content: center;
+}
+:host deep .bx.bxl-instagram{
+  color: aqua;
+
+}
+.--home-icons{
+
+
+}
+.--home-insta{
+  border: 1px solid lightseagreen;
+  border-radius: 50%;
+  padding: 5px 5px 5px 5px;
+  margin-right: 15px;
+
+}
+.--home-fb{
+  border: 1px solid lightseagreen;
+  border-radius: 50%;
+  padding: 5px 5px 5px 5px;
+  margin-right: 15px;
+}
+.--home-in{
+    border: 1px solid lightseagreen;
+  border-radius: 50%;
+  padding: 5px 5px 5px 5px;
+  margin-right: 15px;
+
+}
+.--home-insta:hover{
+  background-color: lightseagreen;
+  box-shadow: 0 0  20px  lightseagreen;
+}
+.--home-fb:hover{
+  background-color: lightseagreen;
+  box-shadow: 0 0  20px  lightseagreen;
+}
+.--home-in:hover{
+  background-color: lightseagreen;
+  box-shadow: 0 0  20px  lightseagreen;
+}
+.--home--btn-box{
+  text-decoration: none;
+  background-color: lightseagreen;
+  border: 1px solid lightseagreen;
+  padding: 12px 28px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  font-weight: 550;
+  color: black;
+  font-size: smaller;
+
+
+}
+.--home-button{
+  margin-top: 10px;
+}
+.--home--btn-box:hover{
+  box-shadow: 0 0 5px lightseagreen,
+  0 0 25px lightseagreen, 0 0 50px lightseagreen,
+  0 0 100px lightseagreen  ;
+}
+ //about me
+section#about{
+  margin-top: 200px;
+}
+ .--about-content-Title{
+  color: lightseagreen;
+ }
+span.--about-content-subtitle{
+  color: black;
+}
+
+//skills
+.--skills-main-heading{
+  color: lightseagreen;
+  border-bottom: 1px solid #002147;
+
+}
+section#skills{
+  margin-top: 200px;
+}
+.--skills-content-title{
+  font-size: medium;
+
+}
+.--skills-content{
+  margin-top: 20px;
+}
+
+//contact
+span.--contact-subcontent
+{
+  color: lightseagreen;
+  font-weight: 550;
+  font-family: sans-serif;
+
+}
+ .--contact--content{
+  margin-top: 30px;
+ }
+.--contact-img-phone, .--contact-img-email, .--contact-img-in{
+ border: 1px solid lightseagreen;
+  border-radius: 50%;
+  padding: 5px 5px 5px 5px;
+  margin-right: 15px;
+}
+
+.--contact-img-phone:hover, .--contact-img-email:hover, .--contact-img-in:hover{
+  background-color: lightseagreen;
+  box-shadow: 0 0  20px  lightseagreen;
+}
+.--contact--main-heading{
+  color: lightseagreen;
+  border-bottom: 1px solid #002147;
+}
+section#contact{
+  margin-top: 200px;
+}
+button.btn.btn-primary.--contact-submt-btn {
+    background-color: lightseagreen;
+    border:lightseagreen ;
+    border-radius: 50px;
+    margin-top: 20px;
+    color: black;
+    letter-spacing: 1px;
+    font-size: smaller;
+    font-weight: 550;
+    margin-bottom: 20px;
+        width: 553px;
+}
+button.btn.btn-primary.--contact-submt-btn:hover{
+  box-shadow: 0 0 5px lightseagreen,
+  0 0 25px lightseagreen, 0 0 50px lightseagreen,
+  0 0 100px lightseagreen  ;
+}

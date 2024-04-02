@@ -1,0 +1,19 @@
+<div class="container" [@slideInFromRight]>
+  <h1 class="--skills-main-heading">Skills</h1>
+  <div *ngFor="let item of skills">
+    <div class="--skills-content">
+      <h4 class="--skills-content-title">{{ item.name }}</h4>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          [style.width.%]="item.progress"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          title="{{ item.progress }}%"
+          data-toggle="tooltip"
+        ></div>
+      </div>
+    </div>
+  </div>
+</div>
